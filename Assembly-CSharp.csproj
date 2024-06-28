@@ -56,17 +56,20 @@
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\Scripts\TowerProjectile.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
+    <Compile Include="Assets\Scripts\TowerData.cs" />
     <Compile Include="Assets\Scripts\TestDoTween.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\DogMatchingGame.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\Scripts\BasicTower.cs" />
     <Compile Include="Assets\Scripts\CarMove.cs" />
-    <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

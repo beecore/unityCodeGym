@@ -386,12 +386,15 @@
 "Assets/DOTween/Modules/DOTweenModuleUI.cs"
 "Assets/DOTween/Modules/DOTweenModuleUnityVersion.cs"
 "Assets/DOTween/Modules/DOTweenModuleUtils.cs"
+"Assets/Scripts/BasicTower.cs"
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/CarMove.cs"
 "Assets/Scripts/DogMatchingGame.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/TestDoTween.cs"
+"Assets/Scripts/TowerData.cs"
+"Assets/Scripts/TowerProjectile.cs"
 -langversion:9.0
 
 /deterministic

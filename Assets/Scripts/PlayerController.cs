@@ -31,7 +31,11 @@ public class PlayerController : MonoBehaviour
 
     private float horizontalInput;
     private float verticalInput;
-
+    private Rigidbody rb;
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>(); // Lấy Rigidbody của xe
+    }
     // Update is called once per frame
     void Update()
     {
@@ -50,11 +54,20 @@ public class PlayerController : MonoBehaviour
     }
     private void MoveByController()
     {
-      
-        // Điều khiển xe bằng tay
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
-        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 
+        // Điều khiển xe bằng tay
+        Vector3 movement = transform.forward * verticalInput * speed * Time.deltaTime;
+        rb.MovePosition(rb.position + movement);
+
+        Vector3 rotation = Vector3.up * horizontalInput * turnSpeed * Time.deltaTime;
+        rb.MoveRotation(rb.rotation * Quaternion.Euler(rotation));
+
+        // Giới hạn vị trí của xe trong khu vực đường đua
+        rb.position = new Vector3(
+            Mathf.Clamp(rb.position.x, -1.5f, 1.5f),
+            rb.position.y,
+            Mathf.Clamp(rb.position.z, -1.5f, 1.5f)
+        );
 
     }
     private void MoveToTarget()
